@@ -1,0 +1,18 @@
+!!!5
+html
+  head
+    //- title #{title} - My Site
+    //- link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 Login
+    .container
+  form(method="post")
+    p
+      label(for="user") User:
+        input(type="text", name="user")
+    p
+      label(for="password") Password:
+        input(type="text", name="password")
+
+    input(type="submit", value="Send")
