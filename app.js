@@ -45,7 +45,8 @@ app.post('/login', function (req, res) {
   var post = req.body;
   if (post.user == 'marc' && post.password == 'test') {
     req.session.user_id = post.user;
-    res.redirect('/my_secret_page');
+    // res.redirect('/my_secret_page');
+    res.send('loged in');
   } else {
     res.send('Bad user/pass');
   }
